@@ -113,11 +113,11 @@ Exported saves are written to `[Balatro folder]/SW-Exports/[Profile]/` by defaul
 <!-- other-mods:start -->
 ## More from SilvertongueRED
 
-**Fit To Screen is now on Nexus Mods:** [nexusmods.com/balatro/mods/1001](https://www.nexusmods.com/balatro/mods/1001). It stops tall pause menus and sidebars from being cut off at the top and bottom of your screen.
+**Fit to Screen (Menu Resizer) is now on Nexus Mods:** [nexusmods.com/balatro/mods/1001](https://www.nexusmods.com/balatro/mods/1001). It stops tall pause menus and sidebars from being cut off at the top and bottom of your screen.
 
 ### See my other mods and forks of other people's mods
 
-- [Balatro-Fit-To-Screen](https://github.com/SilvertongueRED/Balatro-Fit-To-Screen) ([Nexus Mods](https://www.nexusmods.com/balatro/mods/1001)) - stops tall pause menus and sidebars from being cut off at the top and bottom of your screen
+- [Balatro-Fit-To-Screen-Menu-Resizer-](https://github.com/SilvertongueRED/Balatro-Fit-To-Screen-Menu-Resizer-) ([Nexus Mods](https://www.nexusmods.com/balatro/mods/1001)) - stops tall pause menus and sidebars from being cut off at the top and bottom of your screen
 - [Balatro-Mod-Search-and-Sort](https://github.com/SilvertongueRED/Balatro-Mod-Search-and-Sort) ([Nexus Mods](https://www.nexusmods.com/balatro/mods/984)) - search, filter and sort the Mods menu without messing up the load order
 - [Balatro-Mod-Updater](https://github.com/SilvertongueRED/Balatro-Mod-Updater) - keeps your mods, Steamodded and Lovely up to date, with backups and a rescue screen when an update breaks the game
 - [Trance-Active-and-Updated](https://github.com/SilvertongueRED/Trance-Active-and-Updated) - colour and font manager that recolours the whole game, maintained fork (a fork of [SpectralPack/Trance](https://github.com/SpectralPack/Trance))
