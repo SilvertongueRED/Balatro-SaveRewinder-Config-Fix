@@ -1,0 +1,29 @@
+name: Release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build zip and publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(jq -r .version SaveRewinder.json)
+          NAME="SaveRewinder-v$VERSION"
+          mkdir -p "/tmp/$NAME/SaveRewinder"
+          git archive HEAD | tar -x -C "/tmp/$NAME/SaveRewinder"
+          rm -rf "/tmp/$NAME/SaveRewinder/.github" "/tmp/$NAME/SaveRewinder/tests" "/tmp/$NAME/SaveRewinder/release-notes"
+          (cd "/tmp/$NAME" && zip -r "$GITHUB_WORKSPACE/$NAME.zip" SaveRewinder)
+          if gh release view "v$VERSION" >/dev/null 2>&1; then
+            gh release upload "v$VERSION" "$NAME.zip" --clobber
+          else
+            gh release create "v$VERSION" "$NAME.zip" --target "$GITHUB_SHA" \
+              --title "Save Rewinder v$VERSION" --notes-file "release-notes/v$VERSION.md"
+          fi

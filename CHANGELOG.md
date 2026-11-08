@@ -4,6 +4,12 @@ English | [简体中文](https://github.com/Liafonx/Balatro-SaveRewinder/blob/ma
 
 All notable changes to Save Rewinder will be documented in this file.
 
+## [1.6.3] - 2026-11-08
+
+### Fixed
+- **Rebound keybinds gaining the default key back**: Steamodded merges `config.lua` defaults into the saved config on every launch, so a rebind such as `S` to `,` came back as `,+S`. The keybind defaults are no longer listed in `config.lua` (they live in `Utils/Keybinds.lua` and still apply when a binding is missing).
+- **Already-affected saved configs**: If your saved config still shows a stale extra key, rebind the action once in the Keybinds tab (or use Reset to defaults) and it will now stay as set.
+
 ## [1.6.2] - 2026-03-15
 
 ### Fixed
